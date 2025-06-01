@@ -1,0 +1,12 @@
+services:
+  backend:
+    image: kubeprashant798/go-bank
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: .
+      
+    ports:
+      - "3000:3000"

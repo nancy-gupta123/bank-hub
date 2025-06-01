@@ -1,0 +1,37 @@
+import Login from "./components/Login";
+import Register from "./components/Register";
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+
+import Dashboard from "./components/Dashboard";
+import Dashboard1 from "./components/Dashboard1";
+import Transactionhistory from "./components/Transactionhistory"
+import LoginCredentials from "./components/LoginCredentials";
+import Logout from "./components/Logout";
+import TransferMoney from "./components/TransferMoney";
+import Transactionhis from "./components/Transactionhis";
+import Checkbalance from "./components/Checkbalance";
+
+
+function App() {
+  
+  return (
+    <Router>
+      <Routes>
+        <Route path="/"element={<Dashboard1/>}></Route>
+        <Route path="/account"element={<Register/>}></Route>
+        <Route path="/login"element={<Login/>}></Route>
+        <Route path="/dashboard"element={<Dashboard/>}></Route>
+        <Route path="/transactionhistory1"element={<Transactionhistory/>}></Route>
+        <Route path="/LoginCredentials"element={<LoginCredentials/>}></Route>
+        <Route path="/logout"element={<Logout/>}></Route>
+        <Route path="/transfermoney"element={<TransferMoney/>}></Route>
+        <Route path="/transactionhistory"element={<Transactionhis/>}></Route>
+        <Route path="/checkbalance"element={<Checkbalance/>}></Route>
+      </Routes>
+      
+      
+    </Router>
+  );
+}
+
+export default App;
