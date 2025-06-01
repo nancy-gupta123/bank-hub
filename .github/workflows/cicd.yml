@@ -19,7 +19,7 @@ jobs:
                 context: .
                 push: true
                 tags: ${{secrets.DOCKER_USER_NAME}}/bankhub
-            - name: Log Out of Dockerhub 
+            - name: Dockerhub 
               run: docker logout  
     deploy:
         needs: build
