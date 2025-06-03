@@ -5,7 +5,7 @@ export const showUser = createAsyncThunk(
     "auth/showUser",
     async (args, { rejectWithValue }) => {
       const response = await fetch(
-        "http://34.236.99.219:8080/account",
+        "http://localhost:8080/account",
         { method: "GET",
             headers: {
               "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export const showUser = createAsyncThunk(
     async (data, { rejectWithValue }) => {
       console.log("data", data);
       const response = await fetch(
-      "http://34.236.99.219:8080/login",
+      "http://localhost:8080/login",
         {
           method: "POST",
           headers: {

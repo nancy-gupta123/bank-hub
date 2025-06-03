@@ -21,7 +21,7 @@ const Dashboard = () => {
     const timer=setTimeout(()=>{
       setlazyloading(false)
     },3000)
-    fetch(`http://34.236.99.219:8080/account`)
+    fetch(`http://localhost:8080/account`)
       .then((response) => response.json())
       .then((data) => setuserdata(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -81,7 +81,7 @@ const Dashboard = () => {
       // Fetch new token when Learn More is clicked
       const logincred = localStorage.getItem("Logincred");
       console.log(logincred)
-      const response = await fetch("http://34.236.99.219:8080/login", {
+      const response = await fetch("http://localhost:8080/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

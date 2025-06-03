@@ -84,7 +84,7 @@ const TransferMoney = () => {
         redirect: "follow",
       };
 
-      const response=await fetch("http://34.236.99.219:8080/transaction", requestOptions)
+      const response=await fetch("http://localhost:8080/transaction", requestOptions)
       if (!response.ok) {
         const errorData = await response.json();
         setErrorMessage(errorData.message || "Transaction failed.");

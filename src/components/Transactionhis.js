@@ -55,7 +55,7 @@ const requestOptions = {
 };
 
 try{
-const response=await fetch("http://34.236.99.219:8080/transaction/history", requestOptions)
+const response=await fetch("http://localhost:8080/transaction/history", requestOptions)
 if (!response.ok) {
     const errorData = await response.json();
     setErrorMessage(errorData.message || "Failed to fetch transaction history.");
