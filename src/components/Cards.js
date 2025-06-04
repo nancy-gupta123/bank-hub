@@ -5,7 +5,7 @@ import * as FaIcons from "react-icons/fa";
 const Cards = ({name,url,link}) => {
   return (
     <Link to={link}>
-    <div className='h-80'>
+    <div className='h-82'>
         <div className="max-w-sm p-4 h-80">
     <div className="flex flex-col h-full p-8 bg-teal-400 rounded-lg dark:bg-cardbody">
         <div className="flex items-center mb-3">
