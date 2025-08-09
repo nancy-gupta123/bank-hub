@@ -81,7 +81,7 @@ const Dashboard = () => {
       // Fetch new token when Learn More is clicked
       const logincred = localStorage.getItem("Logincred");
       console.log(logincred)
-      const response = await fetch("http://localhost:8080/login", {
+      const response = await fetch("http://13.51.242.117:8080/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

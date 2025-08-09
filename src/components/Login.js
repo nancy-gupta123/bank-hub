@@ -70,7 +70,7 @@ const Login = () => {
       };
   
       // Perform the fetch call
-      const response = await fetch("http://localhost:8080/login", requestOptions);
+      const response = await fetch("http://13.51.242.117:8080/login", requestOptions);
   
       // Check if the response is okay
       if (!response.ok) {

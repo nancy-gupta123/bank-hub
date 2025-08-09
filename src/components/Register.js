@@ -72,7 +72,7 @@ const Register = () => {
       };
 
       const response = await fetch(
-        "http://localhost:8080/account",
+        "http://13.51.242.117:8080/account",
         requestOptions
       );
       console.log(response)

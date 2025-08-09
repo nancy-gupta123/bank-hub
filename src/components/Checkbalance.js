@@ -53,7 +53,7 @@ const Checkbalance = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/balance",
+        "http://13.51.242.117:8080/balance",
         requestOptions
       );
       const result = await response.json();
