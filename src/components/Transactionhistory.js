@@ -34,7 +34,7 @@ const Transactionhistory = () => {
     <div className="p-6">
       <h1 className="mb-4 text-2xl font-semibold">User List</h1>
 
-      {/* Search Bar */}
+      
       <input
         type="text"
         placeholder="Search users by name..."
@@ -47,7 +47,7 @@ const Transactionhistory = () => {
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse">
           <thead>
-            <tr className="bg-gray-700 text-white">
+            <tr className="text-white bg-gray-700">
               <th className="px-4 py-2 text-left">ID</th>
               <th className="px-4 py-2 text-left">First Name</th>
               <th className="px-4 py-2 text-left">Last Name</th>
